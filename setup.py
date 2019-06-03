@@ -15,7 +15,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/satyavls/simple_mock",
     packages=setuptools.find_packages(),
-    install_requires = ['mock'],
+    install_requires=['mock'],
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 2.7",

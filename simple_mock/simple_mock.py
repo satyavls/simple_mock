@@ -1,4 +1,6 @@
 import mock
+
+
 class SimpleMockException(Exception):
     """ Exception to raise in Simple Mock"""
     pass
@@ -11,11 +13,11 @@ class SimpleMock(object):
     def patch_func(self, func, exptd_ret_val=None,
                    exptd_err=None, err_msg="exception through mock"):
         """
-        :param func:
-        :param exptd_ret_val:
-        :param exptd_err:
-        :param err_msg:
-        :return:
+        :param func: This parameter used to accept the function name that needs to patch while unittest or white box testing
+        :param exptd_ret_val:This parameter hold the return value expected from patched function
+        :param exptd_err:This parameter used to get expected exception from patched function
+        :param err_msg:This parameter used to return the error message along with expected error
+        :return:This will returned the patched function
         """
 
         func = ".".join(["__main__", func])
@@ -36,7 +38,8 @@ class SimpleMock(object):
 
     def start(self, patched_func):
         """
-        :param patched_func:
+        :param patched_func: This parameter accept the patched function and provide ability
+                             to start the patch effect of actual function
         :return:
         """
         try:
@@ -47,7 +50,8 @@ class SimpleMock(object):
 
     def stop(self, patched_func):
         """
-        :param patched_func:
+        :param patched_func:This parameter accept the patched function and provide ability
+                            to stop the patch effect of actual function
         :return:
         """
         try:
