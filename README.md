@@ -14,7 +14,7 @@ This library use the mock module in python
 ## Installation
 ************
 
-Install via `pip`_:
+Install via [pip](http://www.pip-installer.org/):
 
     $ pip install simple_mock
 
@@ -27,7 +27,7 @@ Install from source:
 ## Usage
 
 ```python
-# example of simple mock - single function 
+# example - mocking single function to return some value or exception
 
 import unittest
 from simple_mock import SimpleMock
@@ -45,6 +45,7 @@ class TestAddFunctionality(unittest.TestCase):
         self.assertEqual(add_num(2,2),45)
 
 ```
+Refer [here](https://github.com/satyavls/simple_mock/tree/master/examples) for more detailed examples 
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

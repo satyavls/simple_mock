@@ -8,6 +8,9 @@ class TestAddNum(unittest.TestCase):
     def setUp(self):
         self.simple_mock = SimpleMock()
 
+    def tearDown(self):
+        self.simple_mock.clear_all_patch()
+
     def test_add_num(self):
         """
         This is example where add_num function is patched to return the 45 value
