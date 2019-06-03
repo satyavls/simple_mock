@@ -1,3 +1,4 @@
+import mock
 class SimpleMockException(Exception):
     """ Exception to raise in Simple Mock"""
     pass
