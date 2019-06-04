@@ -14,7 +14,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/satyavls/simple_mock",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(include=['simple_mock'], exclude=['simple_mock.examples',]),
     install_requires=['mock'],
     classifiers=[
         "License :: OSI Approved :: MIT License",

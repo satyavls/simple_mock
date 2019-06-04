@@ -15,6 +15,7 @@ class TestAddNum(unittest.TestCase):
         """
         This is example where add_num function is patched to return the 45 value
         """
+        #
         patched_add_func = self.simple_mock.patch_func(func='add_num', exptd_ret_val=45)
         self.assertEqual(add_num(2, 2), 45)
 
